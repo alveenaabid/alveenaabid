@@ -28,7 +28,10 @@ document.querySelector(
   '#w-node-_99dfa5e9-8d30-2e63-61b5-ec6d21b32aa0-1edce209'
 ).style.opacity = 100;
 
-document.getElementById('year1').click();
+setTimeout(function () {
+  document.getElementById('year1').click()
+}, 1000)
+
 document.querySelector(
   '#w-node-_99dfa5e9-8d30-2e63-61b5-ec6d21b32aa0-1edce209'
 ).style.mixBlendMode = 'normal';
