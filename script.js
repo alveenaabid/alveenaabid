@@ -24,12 +24,11 @@ var userinput = 100;
 var output = 0;
 
 document.getElementById('microsoft').click();
-window.document.onload = function(e){
-    document.getElementById('year1').click()
-}
 document.querySelector(
   '#w-node-_99dfa5e9-8d30-2e63-61b5-ec6d21b32aa0-1edce209'
 ).style.opacity = 100;
+
+document.getElementById('year1').click();
 document.querySelector(
   '#w-node-_99dfa5e9-8d30-2e63-61b5-ec6d21b32aa0-1edce209'
 ).style.mixBlendMode = 'normal';
