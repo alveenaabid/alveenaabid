@@ -20,7 +20,7 @@ var ap = [
 var companyName = '',
   ys = '';
 
-var userinput = 0;
+var userinput = 100;
 var output = 0;
 
 
