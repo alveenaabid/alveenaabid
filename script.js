@@ -246,7 +246,7 @@ document.getElementById('From-3').addEventListener('click', function (event) {
   value = document.getElementById('slider_value').innerText;
   document.getElementById('invest_total').innerHTML = `${value}`;
 
-  profitTotal = output //parseInt(value.slice(1));
+  profitTotal = output + parseInt(value.slice(1)) -100 ;
   document.getElementById('profit_total').innerHTML = `$${profitTotal.toFixed(
     2
   )}`;
