@@ -56,16 +56,16 @@ document.getElementById('microsoft').addEventListener('click', function () {
     '' !== ys &&
       ('year1' == ys
         ? (output =
-            ((ap[0].ys[1] - ap[0].ys[0]) / ap[0].ys[0]) + 1 )
+            ((ap[0].ys[1] - ap[0].ys[0]) / ap[0].ys[0]) * 100 + userinput)
         : 'year2' == ys
         ? (output =
-            ((ap[0].ys[2] - ap[0].ys[0]) / ap[0].ys[0]) + 1)
+            ((ap[0].ys[2] - ap[0].ys[0]) / ap[0].ys[0]) * 100 + userinput)
         : 'year3' == ys
         ? (output =
-            ((ap[0].ys[3] - ap[0].ys[0]) / ap[0].ys[0]) + 1)
+            ((ap[0].ys[3] - ap[0].ys[0]) / ap[0].ys[0]) * 100 + userinput)
         : 'year4' == ys &&
           (output =
-            ((ap[0].ys[4] - ap[0].ys[0]) / ap[0].ys[0]) + 1),
+            ((ap[0].ys[4] - ap[0].ys[0]) / ap[0].ys[0]) * 100 + userinput)),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -89,16 +89,16 @@ document.getElementById('google').addEventListener('click', function () {
     '' !== ys &&
       ('year1' == ys
         ? (output =
-            ((ap[3].ys[1] - ap[3].ys[0]) / ap[3].ys[0]) + 1)
+            ((ap[3].ys[1] - ap[3].ys[0]) / ap[3].ys[0]) * 100 + userinput)
         : 'year2' == ys
         ? (output =
-            ((ap[3].ys[2] - ap[3].ys[0]) / ap[3].ys[0]) + 1)
+            ((ap[3].ys[2] - ap[3].ys[0]) / ap[3].ys[0]) * 100 + userinput)
         : 'year3' == ys
         ? (output =
-            ((ap[3].ys[3] - ap[3].ys[0]) / ap[3].ys[0]) + 1)
+            ((ap[3].ys[3] - ap[3].ys[0]) / ap[3].ys[0]) * 100 + userinput)
         : 'year4' == ys &&
           (output =
-            ((ap[3].ys[4] - ap[3].ys[0]) / ap[3].ys[0]) + 1),
+            ((ap[3].ys[4] - ap[3].ys[0]) / ap[3].ys[0]) * 100 + userinput)),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -121,16 +121,16 @@ document.getElementById('tesla').addEventListener('click', function () {
     '' !== ys &&
       ('year1' == ys
         ? (output =
-            ((ap[2].ys[1] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
+            ((ap[2].ys[1] - ap[2].ys[0]) / ap[2].ys[0]) * 100 + userinput)
         : 'year2' == ys
         ? (output =
-            ((ap[2].ys[2] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
+            ((ap[2].ys[2] - ap[2].ys[0]) / ap[2].ys[0]) * 100 + userinput)
         : 'year3' == ys
         ? (output =
-            ((ap[2].ys[3] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
+            ((ap[2].ys[3] - ap[2].ys[0]) / ap[2].ys[0]) * 100 + userinput)
         : 'year4' == ys &&
           (output =
-            ((ap[2].ys[4] - ap[2].ys[0]) / ap[2].ys[0]) + 1),
+            ((ap[2].ys[4] - ap[2].ys[0]) / ap[2].ys[0]) * 100 + userinput)),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -153,16 +153,16 @@ document.getElementById('apple').addEventListener('click', function () {
     '' !== ys &&
       ('year1' == ys
         ? (output =
-            ((ap[1].ys[1] - ap[1].ys[0]) / ap[1].ys[0]) + 1)
+            ((ap[1].ys[1] - ap[1].ys[0]) / ap[1].ys[0]) * 100 + userinput)
         : 'year2' == ys
         ? (output =
-            ((ap[1].ys[2] - ap[1].ys[0]) / ap[1].ys[0]) + 1)
+            ((ap[1].ys[2] - ap[1].ys[0]) / ap[1].ys[0]) * 100 + userinput)
         : 'year3' == ys
         ? (output =
-            ((ap[1].ys[3] - ap[1].ys[0]) / ap[1].ys[0]) + 1)
+            ((ap[1].ys[3] - ap[1].ys[0]) / ap[1].ys[0]) * 100 + userinput)
         : 'year4' == ys &&
           (output =
-            ((ap[1].ys[4] - ap[1].ys[0]) / ap[1].ys[0]) + 1),
+            ((ap[1].ys[4] - ap[1].ys[0]) / ap[1].ys[0]) * 100 + userinput)),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -174,14 +174,14 @@ document.getElementById('year1').addEventListener('click', function () {
     (document.querySelector('#year4 > div').style.backgroundColor = '#FFFFFF'),
     (ys = 'year1'),
     'microsoft' == companyName
-      ? (output = ((ap[0].ys[1] - ap[0].ys[0]) / ap[0].ys[0]) + 1)
+      ? (output = ((ap[0].ys[1] - ap[0].ys[0]) / ap[0].ys[0]) * 100 + userinput)
       : 'apple' == companyName
-      ? (output = ((ap[1].ys[1] - ap[1].ys[0]) / ap[1].ys[0]) + 1)
+      ? (output = ((ap[1].ys[1] - ap[1].ys[0]) / ap[1].ys[0]) * 100 + userinput)
       : 'tesla' == companyName
-      ? (output = ((ap[2].ys[1] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
+      ? (output = ((ap[2].ys[1] - ap[2].ys[0]) / ap[2].ys[0]) * 100 + userinput)
       : 'google' == companyName &&
         (output =
-          ((ap[3].ys[1] - ap[3].ys[0]) / ap[3].ys[0]) + 1),
+          ((ap[3].ys[1] - ap[3].ys[0]) / ap[3].ys[0]) * 100 + userinput),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -193,14 +193,14 @@ document.getElementById('year2').addEventListener('click', function () {
     (document.querySelector('#year4 > div').style.backgroundColor = '#FFFFFF'),
     (ys = 'year2'),
     'microsoft' == companyName
-      ? (output = ((ap[0].ys[2] - ap[0].ys[0]) / ap[0].ys[0]) + 1)
+      ? (output = ((ap[0].ys[2] - ap[0].ys[0]) / ap[0].ys[0]) * 100 + userinput)
       : 'apple' == companyName
-      ? (output = ((ap[1].ys[2] - ap[1].ys[0]) / ap[1].ys[0]) + 1)
+      ? (output = ((ap[1].ys[2] - ap[1].ys[0]) / ap[1].ys[0]) * 100 + userinput)
       : 'tesla' == companyName
-      ? (output = ((ap[2].ys[2] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
+      ? (output = ((ap[2].ys[2] - ap[2].ys[0]) / ap[2].ys[0]) * 100 + userinput)
       : 'google' == companyName &&
         (output =
-          ((ap[3].ys[2] - ap[3].ys[0]) / ap[3].ys[0]) + 1),
+          ((ap[3].ys[2] - ap[3].ys[0]) / ap[3].ys[0]) * 100 + userinput),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -212,14 +212,14 @@ document.getElementById('year3').addEventListener('click', function () {
     (document.querySelector('#year4 > div').style.backgroundColor = '#FFFFFF'),
     (ys = 'year3'),
     'microsoft' == companyName
-      ? (output = ((ap[0].ys[3] - ap[0].ys[0]) / ap[0].ys[0]) + 1)
+      ? (output = ((ap[0].ys[3] - ap[0].ys[0]) / ap[0].ys[0]) * 100 + userinput)
       : 'apple' == companyName
-      ? (output = ((ap[1].ys[3] - ap[1].ys[0]) / ap[1].ys[0]) + 1)
+      ? (output = ((ap[1].ys[3] - ap[1].ys[0]) / ap[1].ys[0]) * 100 + userinput)
       : 'tesla' == companyName
-      ? (output = ((ap[2].ys[3] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
+      ? (output = ((ap[2].ys[3] - ap[2].ys[0]) / ap[2].ys[0]) * 100 + userinput)
       : 'google' == companyName &&
         (output =
-          ((ap[3].ys[3] - ap[3].ys[0]) / ap[3].ys[0]) + 1),
+          ((ap[3].ys[3] - ap[3].ys[0]) / ap[3].ys[0]) * 100 + userinput),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -231,12 +231,12 @@ document.getElementById('year4').addEventListener('click', function () {
     (document.querySelector('#year1 > div').style.backgroundColor = '#FFFFFF'),
     (ys = 'year4'),
     'microsoft' == companyName
-      ? (output = ((ap[0].ys[4] - ap[0].ys[0]) / ap[0].ys[0]) + 1)
+      ? (output = ((ap[0].ys[4] - ap[0].ys[0]) / ap[0].ys[0]) * 100 + userinput)
       : 'apple' == companyName
-      ? (output = ((ap[1].ys[4] - ap[1].ys[0]) / ap[1].ys[0]) + 1)
+      ? (output = ((ap[1].ys[4] - ap[1].ys[0]) / ap[1].ys[0]) * 100 + userinput)
       : 'tesla' == companyName &&
         (output =
-          ((ap[3].ys[4] - ap[3].ys[0]) / ap[3].ys[0]) + 1),
+          ((ap[3].ys[4] - ap[3].ys[0]) / ap[3].ys[0]) * 100 + userinput),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -245,7 +245,7 @@ document.getElementById('year4').addEventListener('click', function () {
 document.getElementById('From-3').addEventListener('click', function (event) {
   value = document.getElementById('slider_value').innerText;
   document.getElementById('invest_total').innerHTML = `${value}`;
-  profitTotal = output * parseInt(value.slice(1)) ;
+  profitTotal = output + parseInt(value.slice(1)) -userinput ;
   document.getElementById('profit_total').innerHTML = `$${profitTotal.toFixed(
     2
   )}`;
