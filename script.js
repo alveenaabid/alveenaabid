@@ -65,7 +65,7 @@ document.getElementById('microsoft').addEventListener('click', function () {
             ((ap[0].ys[3] - ap[0].ys[0]) / ap[0].ys[0]) + 1)
         : 'year4' == ys &&
           (output =
-            ((ap[0].ys[4] - ap[0].ys[0]) / ap[0].ys[0]) + 1)),
+            ((ap[0].ys[4] - ap[0].ys[0]) / ap[0].ys[0]) + 1),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -98,7 +98,7 @@ document.getElementById('google').addEventListener('click', function () {
             ((ap[3].ys[3] - ap[3].ys[0]) / ap[3].ys[0]) + 1)
         : 'year4' == ys &&
           (output =
-            ((ap[3].ys[4] - ap[3].ys[0]) / ap[3].ys[0]) + 1)),
+            ((ap[3].ys[4] - ap[3].ys[0]) / ap[3].ys[0]) + 1),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -130,7 +130,7 @@ document.getElementById('tesla').addEventListener('click', function () {
             ((ap[2].ys[3] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
         : 'year4' == ys &&
           (output =
-            ((ap[2].ys[4] - ap[2].ys[0]) / ap[2].ys[0]) + 1)),
+            ((ap[2].ys[4] - ap[2].ys[0]) / ap[2].ys[0]) + 1),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -162,7 +162,7 @@ document.getElementById('apple').addEventListener('click', function () {
             ((ap[1].ys[3] - ap[1].ys[0]) / ap[1].ys[0]) + 1)
         : 'year4' == ys &&
           (output =
-            ((ap[1].ys[4] - ap[1].ys[0]) / ap[1].ys[0]) + 1)),
+            ((ap[1].ys[4] - ap[1].ys[0]) / ap[1].ys[0]) + 1),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
@@ -200,7 +200,7 @@ document.getElementById('year2').addEventListener('click', function () {
       ? (output = ((ap[2].ys[2] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
       : 'google' == companyName &&
         (output =
-          ((ap[3].ys[2] - ap[3].ys[0]) / ap[3].ys[0]) + 1)),
+          ((ap[3].ys[2] - ap[3].ys[0]) / ap[3].ys[0]) + 1),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
