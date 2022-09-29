@@ -181,7 +181,7 @@ document.getElementById('year1').addEventListener('click', function () {
       ? (output = ((ap[2].ys[1] - ap[2].ys[0]) / ap[2].ys[0]) + 1)
       : 'google' == companyName &&
         (output =
-          ((ap[3].ys[1] - ap[3].ys[0]) / ap[3].ys[0]) + 1)),
+          ((ap[3].ys[1] - ap[3].ys[0]) / ap[3].ys[0]) + 1),
     (document.getElementById('profit_total').innerHTML = `$ ${output.toFixed(
       2
     )}`);
